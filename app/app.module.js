@@ -9,6 +9,7 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var product_list_component_1 = require("./products/product-list.component");
+var forms_1 = require("@angular/forms");
 //  import {enableProdMode} from '@angular/core';
 //  enableProdMode();
 var AppModule = (function () {
@@ -18,7 +19,7 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
         declarations: [app_component_1.AppComponent, product_list_component_1.ProductListComponent],
         bootstrap: [app_component_1.AppComponent]
     })
