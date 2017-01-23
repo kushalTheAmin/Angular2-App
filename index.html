@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <base href="/">
+    <title>Angular2 Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+   
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); }); //SystemJs is  javascript library which will allow
+// to import other libreries...this code will look for app/main.ts where we put our Application code.and If it can't find 
+// this file, it will throw an error...  
+    </script>
+</head>
+
+<body>
+    <pm-app>Loading App...</pm-app>
+</body>
+
+</html>
